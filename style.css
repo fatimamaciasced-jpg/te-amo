@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  background: white;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.frase {
+  color: red;
+  margin-bottom: 40px;
+}
+
+.contenedor {
+  position: relative;
+  height: 200px;
+}
+
+.osito {
+  width: 120px;
+  position: absolute;
+  left: 20%;
+  bottom: 0;
+}
+
+#texto {
+  position: absolute;
+  left: 45%;
+  bottom: 60px;
+  font-size: 60px;
+  font-weight: bold;
+  color: #ff3366;
+  letter-spacing: 10px;
+}
+
+.corazon {
+  position: absolute;
+  font-size: 24px;
+  color: red;
+  animation: volar 1s linear forwards;
+}
+
+@keyframes volar {
+  from {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  to {
+    transform: translate(200px, -80px);
+    opacity: 0;
+  }
+}
